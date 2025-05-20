@@ -94,9 +94,13 @@ fonts
   button:hover {
     cursor: pointer;
   }
-  img:hover {
+  .img-flex:hover {
     cursor: pointer;
   }
+.grid-container li:hover {
+    cursor: pointer;
+  }
+
 .up-button {
   width: 60px;
   height: 60px;
