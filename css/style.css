@@ -19,7 +19,8 @@
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-    max-height: inherit;
+      height: auto;
+  object-fit: cover;
   }
   
   input, button, textarea, select {
