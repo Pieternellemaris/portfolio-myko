@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="welcome"> 
+<div  class="welcome"> 
     <header> 
         <nav>
+            <input type="checkbox" id="trigger" />
+  <label aria-label="open main navigation" for="trigger"><span></span></label>
             <ul>
                 <li> <a href="index.html"> Home </a></li>
-                <li><a href="#"> About </a></li>
-                <img src="/images/"> 
                 <li><a href="illustrations.html"> Illustrations </a></li>
+                <img id='logo'src="/images/logo.png"> 
                 <li> <a href="digital_drawings.html"> Digital drawings </a></li>
+                <li><a href="#about-top"> About </a></li>
+
 
             </ul>
         </nav>
         <h1>
             Myko Thomas
         </h1>
+        <img id='bugs'src="/images/bugs.png">
     </header>
 </div>
 
@@ -38,9 +43,9 @@
 <div class="line"></div>
 <div class="illustraties">
     <div class="img-flex">
-    <img class="project" src="images/illu-1.jpeg"> 
-    <img class="project" src="images/illu-4.jpg"> 
-    <img class="project" src="images/illu-3.jpeg"> 
+    <img onclick="location.href='illustrations.html#top';"class="project" src="images/illu-1.jpeg"> 
+    <img onclick="location.href='illustrations.html#top';"class="project" src="images/binnen.jpg"> 
+    <img onclick="location.href='illustrations.html#top';"class="project" src="images/illu-3.jpeg"> 
 </div>
 <button onclick="location.href='illustrations.html';"class="see-more"> <p>See More</p> </button>
 </div>
@@ -48,9 +53,16 @@
 <div class="line"></div>
 
 <div class="about">
-    <h3 class="about-title">About me</h3>
-    <p class="about-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin neque nec dui lobortis aliquam. Nulla ac dignissim diam. Aliquam non vulputate nibh, et ornare diam. In malesuada tellus vitae libero accumsan porta.mus accumsan tellus eget erat elementum dignissim. In tincidunt lectus tincidunt nisl rutrum aliquam. Integer dictum, tortor sit amet tristique maximus, sem enim convallis justo, at ornare erat risus sed ex. Fusce laoreet malesuada maximus. Curabitur ut neque justo. Aliquam mi lectus, tempor nec egestas eget, convallis vel urna. Mauris ut consectetur sem. Integer a lorem sit amet lacus pretium condimentum non non urna. Etiam maximus leo ut convallis sagittis. Vestibulum ac ex vitae augue scelerisque malesuada.
+    <div class="position-abouttekst"> 
+    <h3 id='about-top'class="about-title">About me</h3>
+    <p class="about-text">
+        Hello, my name is Myko Thomas and I’m an artist who loves illustration, fine arts and theming. I’ve always loved digital illustration, but I discovered my love for painting at Maastricht institude of arts, during my BA in Fine Art. There I explored my intrest in insects, worldbuilding and monsters. 
     </p>
+    <h3 class="contact-title">Contact</h3>
+    <p class="about-text contact-inf">
+        Gmail:  Mykothomas.03@gmail.com    
+        Instagram: @_Catko_ </p>
+    </div>
     <div class="butterfly-container">
         <svg id="butterfly" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387.66 320.58">
             <defs>
@@ -97,13 +109,15 @@
 <div class="illustraties">
     <div class="img-flex">
 
-    <img class="project" src="images/digit-4.jpeg"> 
-    <img class="project"  src="images/digit-1.jpeg"> 
-    <img class="project" src="images/digit-3.jpeg"> 
+    <img onclick="location.href='/digital_drawings.html#top';"class="project" src="images/digit-4.jpeg"> 
+    <img onclick="location.href='/digital_drawings.html#top';"class="project"  src="images/digit-6.jpeg"> 
+    <img onclick="location.href='/digital_drawings.html#top';"class="project" src="images/digit-1.jpeg"> 
 </div>
 <button onclick="location.href='/digital_drawings.html';"class="see-more"> <p>See More</p> </button>
 </div>
+<button id="back-up" onclick="location.href='index.html#top';" class="up-button">Ʌ</button>
 <div class="line"></div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

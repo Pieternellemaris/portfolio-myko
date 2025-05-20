@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital drawings</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -12,112 +13,85 @@
 <main>
     <header> 
         <nav>
+                        <input type="checkbox" id="trigger" />
+  <label aria-label="open main navigation" for="trigger"><span></span></label>
+
             <ul>
                 <li> <a href="index.html"> Home </a></li>
-                <li><a href="#"> About </a></li>
-                <img src="images/"> 
                 <li><a href="illustrations.html"> Illustrations </a></li>
+                <img id='logo'src="/images/logo.png"> 
                 <li> <a href="digital_drawings.html"> Digital drawings </a></li>
+                <li><a href="index.html#about-top"> About </a></li>
+
 
             </ul>
         </nav>
     </header>
     <div class="line" id="line-left"></div>
-    <h4>
+    <div class="line" id="line-right2"></div>
+    <h4 id="top">
         Digital drawings
     </h4>
+    <p class="description">
+        With my digital design I mostly focus on characters, worldbuilding and comics! You can check my instagram to see if my commissions for digital illustrations are open.
+    </p>
+    <ul class="grid-container">
+        <li  id="digit-1">
+        <img src="images/digit-1.jpeg"class="lightbox-item" class="item"> 
 
-<ul class="flex-container">
-    <li  id="digit-1">
-    <img src="images/digit-1.jpeg" class="item"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
+        </li>
+        <li  id="digit-2">
+        <img class="item lightbox-item" src="images/digit-2.jpeg"> 
+
+
     </li>
-    <li  id="digit-5">
-    <img class="item"  src="/images/digit-5.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-    <li  id="digit-4">
-    <img class="item"  src="images/digit-4.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-    <li  id="digit-2">
-    <img class="item"  src="images/digit-2.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-    <li  id="digit-3">
-    <img class="item"  src="images/digit-3.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-    <li  id="digit-6">
-    <img class="item"   src="images/digit-6.jpeg">
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li> 
-    <li  id="digit-7">
-    <img class="item"  src="images/digit-7.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-    <li  id="digit-8">
-    <img class="item"  src="images/digit-8.jpeg"> 
-    <div class="hover-box">
-        <h5 class="title">
-            draak
-        </h5>
-        <p>
-            dit is een draak
-        </p>
-    </div>
-</li>
-</ul>
+        <li  id="digit-3">
+        <img class="lightbox-item item" src="images/digit-3.jpeg"> 
 
+    </li>
+        <li  id="digit-4">
+        <img class="lightbox-item item"  src="images/digit-4.jpeg"> 
+
+    </li>
+        <li  id="digit-5">
+        <img class="lightbox-item item"  src="images/digit-5.jpeg"> 
+
+    </li>
+        <li  id="digit-6">
+        <img class="lightbox-item item"   src="images/digit-6.jpeg">
+
+        <li  id="digit-7">
+            <img class="lightbox-item item" src="images/digit-7.jpeg"> 
+
+        </li>
+        <li  id="digit-8">
+            <img class="lightbox-item item" src="images/digit-8.jpeg"> 
+
+        </li>
+        <li  id="digit-9">
+            <img class="lightbox-item item"  src="images/kasteel.png"> 
+
+        </li>
+        <li  id="digit-10">
+            <img class="lightbox-item item"  src="images/motjes.png"> 
+ 
+        </li>
+        <li  id="digit-11">
+            <img class="lightbox-item item" src="images/draak.png"> 
+
+        </li>
+    </ul>
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <button id="lightbox-prev" class="nav-btn">&#10094;</button>
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="">
+          <h2 id="lightbox-title"></h2>
+          <p id="lightbox-caption"></p>
+        </div>
+        <button id="lightbox-next" class="nav-btn">&#10095;</button>
+      </div>
+      
+      
 
 </main>
     <script src="js/script.js"></script>
