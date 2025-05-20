@@ -343,9 +343,6 @@ position: relative;
 img#img-profile {
   width: 800px;
     max-width: 100%;
-  height: auto;
-  object-fit: contain; /* or 'cover' depending on your intent */
-  display: block;
 }
 
 
@@ -367,7 +364,12 @@ position: absolute;
   clip-path: path(var(--butterfly));
 }
 
-
+.frame img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 
 #butterfly {
   width: 385px;
