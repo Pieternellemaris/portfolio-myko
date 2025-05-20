@@ -119,40 +119,39 @@ fonts
 opacity: 80%;
 
 }
-  h1 {
-    text-align: center;
-    padding-top: 150px;
-        font-family: "Vollkorn SC", serif;
-        font-size: 70pt;
-        font-weight: 400;
-        font-style: normal;
-    }
-    
-h2 {
+h1, h2, h4 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
-  padding-top: 35px;
-      font-family: "Vollkorn SC", serif;
-      font-size: 40pt;
-      font-weight: 400;
-      font-style: normal;
 }
+
+h1 {
+  font-size: 70pt;
+  padding-top: 150px;
+}
+
+h2 {
+  font-size: 40pt;
+  padding-top: 35px;
+}
+
+h4 {
+  font-size: 40pt;
+  padding: 0 10px;
+  margin-left: 10vw;
+  width: fit-content;
+  height: auto;
+  z-index: 1;
+  text-align: left; /* overrides from global heading rule */
+}
+
+    
 h3 {
   font-family: "Inter", sans-serif;
   font-size: 30pt;
 }
-h4 {
-padding: 0 10px ;
 
-  margin-left: 10vw;
-      font-family: "Vollkorn SC", serif;
-      font-size: 40pt;
-      font-weight: 400;
-      font-style: normal;
-
-      height: auto;
-      width: fit-content;
-z-index: 1;
-}
 
 h5 {
   font-family: "Cagliostro", sans-serif;
