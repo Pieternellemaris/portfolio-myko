@@ -304,6 +304,12 @@ height: 580px;
 position: relative;
   overflow-x: hidden; /* Just in case */
 }
+.illustraties img {
+  height: 100%;
+  object-fit: contain; /* or 'cover' depending on your intent */
+  display: block;
+}
+
 
 
 .about {
