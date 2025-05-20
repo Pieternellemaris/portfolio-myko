@@ -187,7 +187,6 @@ margin-top: 10px;
     display: flex;
 }
 .img-flex img {
-  width: 100%;
   max-width: 300px;  /* or whatever fits your layout */
   height: auto;
   flex-shrink: 1;
